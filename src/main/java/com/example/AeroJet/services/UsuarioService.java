@@ -18,6 +18,11 @@ public class UsuarioService {
         return (ArrayList<Usuario>) userRep.findAll();
     }
 
+    public Integer getLastUserId() {
+        Integer lastUserId = userRep.findMaxUserId();
+        return lastUserId != null ? lastUserId : 0;
+    }
+
     public Usuario saveUser(Usuario user) {
         return userRep.save(user);
     }

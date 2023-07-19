@@ -23,6 +23,9 @@ public class usuario_data {
 
     @PostMapping
     public Usuario saveUser(@RequestBody Usuario user) {
+        Integer lastUserId = userService.getLastUserId();
+        Integer nextUserId = lastUserId + 1;
+        user.setId(nextUserId); // Setear el nuevo ID en el usuario antes de guardar
         return this.userService.saveUser(user);
     }
 
