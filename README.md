@@ -17,6 +17,7 @@ http://localhost:8085/vuelos/vuelos-fechas-disponibles?fechaInicio=2023-07-24&fe
 ***********************************************************************************************************************
 MÉTODOS POST
 Ingresar en JSON para agregar vuelo, por ejemplo:
+
     {
         "fecha_salida": "2023-07-28",
         "hora_salida": "06:00:00",
@@ -25,6 +26,7 @@ Ingresar en JSON para agregar vuelo, por ejemplo:
         "fecha_reprogramacion": null,
         "estado": "disponible"
     }
+    
 http://localhost:8085/vuelos
 
 
