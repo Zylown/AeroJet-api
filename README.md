@@ -17,6 +17,7 @@ http://localhost:8085/vuelos/vuelos-fechas-disponibles?fechaInicio=2023-07-24&fe
 
 ***********************************************************************************************************************
 MÉTODOS POST
+
 Ingresar en JSON para agregar vuelo, por ejemplo:
 
     {
