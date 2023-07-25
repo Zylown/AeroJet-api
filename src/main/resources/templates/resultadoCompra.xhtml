@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Compra Realizada</title>
+</head>
+<body>
+    <h2>Detalle de la Compra Realizada</h2>
+    <table border="1">
+        <tr>
+            <th>Cliente ID</th>
+            <td th:text="${compra.id_cliente}"></td>
+        </tr>
+        <tr>
+            <th>Paquete ID</th>
+            <td th:text="${compra.id_paquete}"></td>
+        </tr>
+        <tr>
+            <th>Cantidad de Personas</th>
+            <td th:text="${compra.cant_personas}"></td>
+        </tr>
+        <tr>
+            <th>Fecha de Reserva</th>
+            <td th:text="${compra.fech_reserva}"></td>
+        </tr>
+        <tr>
+            <th>Estado</th>
+            <td th:text="${compra.estado}"></td>
+        </tr>
+        <tr>
+            <th>Tipo de Comprobante</th>
+            <td th:text="${compra.tipo_comprobante}"></td>
+        </tr>
+        <tr>
+            <th>Monto de Paquetes</th>
+            <td th:text="${compra.monto_paquetes}"></td>
+        </tr>
+    </table>
+    <br>
+    <a href="#">Volver al inicio</a>
+</body>
+</html>

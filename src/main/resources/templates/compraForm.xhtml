@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<br xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Realizar Compra</title>
+</head>
+<br>
+    <br action="#" th:action="@{/paquete/Comprar}" th:object="${compra}" method="post">
+        <label>Cliente ID: <input type="number" th:field="*{id_cliente}" /></label></br>
+        <label>Paquete ID: <input type="number" th:field="*{id_paquete}" /></label></br>
+        <label>Cantidad de personas: <input type="number" th:field="*{cant_personas}" /></label></br>
+        <label>Fecha de reserva: <input type="date" th:field="*{fech_reserva}" /></label></br>
+        <label>Estado: <input type="text" th:field="*{estado}" /></label></br>
+        <label>Tipo de comprobante: <input type="text" th:field="*{tipo_comprobante}" /></label></br>
+        <label>Monto de paquetes: <input type="text" th:field="*{monto_paquetes}" /></label></br>
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>
